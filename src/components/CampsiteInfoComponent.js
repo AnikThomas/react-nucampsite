@@ -3,7 +3,6 @@ import { Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbIte
 import {Link} from 'react-router-dom';
 
 
-
 function RenderCampsite({campsite}){
     return(
         <div key={campsite.id} className="col-md-5 m-1">
