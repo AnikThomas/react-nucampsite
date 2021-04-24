@@ -75,7 +75,7 @@ class Contact extends Component{
                             <Row className="form-group">
                                 <Label htmlFor="firstName" md={2}>First Name</Label>
                                 <Col md={10}>
-                                    <Control.text model=".firstName" id="firstName" name="firstName"
+                                <Control.text model="firstName" id="firstName" name="firstName"
                                         placeholder="First Name"
                                         className="form-control"
                                         validators={{
@@ -104,12 +104,12 @@ class Contact extends Component{
                                         placeholder="Last Name"
                                         className="form-control"
                                         validators={{
-                                            required, 
+                                            required,
                                             minLength: minLength(2),
                                             maxLength: maxLength(15)
                                         }}
                                     />
-                                     <Errors
+                                    <Errors
                                         className="text-danger"
                                         model=".lastName"
                                         show="touched"
@@ -135,7 +135,7 @@ class Contact extends Component{
                                             isNumber
                                         }}
                                     />
-                                     <Errors
+                                    <Errors
                                         className="text-danger"
                                         model=".phoneNum"
                                         show="touched"
@@ -160,7 +160,7 @@ class Contact extends Component{
                                             validEmail
                                         }}
                                     />
-                                     <Errors
+                                    <Errors
                                         className="text-danger"
                                         model=".email"
                                         show="touched"
