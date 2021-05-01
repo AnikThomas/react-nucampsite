@@ -3,6 +3,7 @@ import { Card, CardImg, CardText, CardBody, Breadcrumb, BreadcrumbItem, Button, 
 import {Link} from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import { Loading } from './LoadingComponent';
+import { baseUrl } from '../shared/baseUrl';
 
 const maxLength = len => val => !val || (val.length <= len);
 const minLength = len => val => val && (val.length >= len);
@@ -86,7 +87,7 @@ function RenderCampsite({campsite}){
     return(
         <div key={campsite.id} className="col-md-5 m-1">
             <Card>
-                <CardImg src={campsite.image} alt={campsite.name}/>
+                <CardImg src={baseUrl + campsite.image} alt={campsite.name}/>
                 <CardBody>
                     <CardText>{campsite.description}</CardText>
                 </CardBody>
