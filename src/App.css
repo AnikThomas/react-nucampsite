@@ -48,7 +48,9 @@ h2 {
 
 .page-enter {
   opacity: 0;
-  transform: translateX(-100%);
+  /* transform: translateX(-100%); */
+  transform: rotate(90deg) scale(2) translateY(-50%) translateX(50%);
+
 }
 
 .page-enter-active {
